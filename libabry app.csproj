@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.5.2\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.5.2\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DD82B99-EF9D-4AE7-AE5F-FFF92F6872EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>libabry_app</RootNamespace>
+    <AssemblyName>libabry app</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.5.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.5.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CardBook.Designer.cs">
+      <DependentUpon>CardBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chinhsua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chinhsua.Designer.cs">
+      <DependentUpon>chinhsua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietPhieuMuon.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietPhieuTra.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="chitietsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chitietsach.Designer.cs">
+      <DependentUpon>chitietsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangkitaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangkitaikhoan.Designer.cs">
+      <DependentUpon>Dangkitaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doimatkhau.Designer.cs">
+      <DependentUpon>Doimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuLieu.cs" />
+    <Compile Include="hoso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hoso.Designer.cs">
+      <DependentUpon>hoso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Huongdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Huongdan.Designer.cs">
+      <DependentUpon>Huongdan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhoiTaoDatabase.cs" />
+    <Compile Include="LibraryModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Lichsu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lichsu.Designer.cs">
+      <DependentUpon>Lichsu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SachHienThi.cs" />
+    <Compile Include="Muonsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Muonsach.Designer.cs">
+      <DependentUpon>Muonsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiDung.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhomQuyen.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhienDangNhap.cs" />
+    <Compile Include="PhieuMuon.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuPhat.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuTra.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quanlynhomquyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlynhomquyen.Designer.cs">
+      <DependentUpon>Quanlynhomquyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlytienphat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlytienphat.Designer.cs">
+      <DependentUpon>Quanlytienphat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlyuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlyuser.Designer.cs">
+      <DependentUpon>Quanlyuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\LichSuRepository.cs" />
+    <Compile Include="Repository\MuonSachRepository.cs" />
+    <Compile Include="Repository\ThongKeRepository.cs" />
+    <Compile Include="Repository\TraSachRepository.cs" />
+    <Compile Include="Sach.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SachDAL.cs" />
+    <Compile Include="TaiKhoan.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestConnection.cs" />
+    <Compile Include="TheLoai.cs">
+      <DependentUpon>LibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Thongke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongke.Designer.cs">
+      <DependentUpon>Thongke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tienich.cs" />
+    <Compile Include="trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trangchu.Designer.cs">
+      <DependentUpon>trangchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trasach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trasach.Designer.cs">
+      <DependentUpon>Trasach.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardBook.resx">
+      <DependentUpon>CardBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chinhsua.resx">
+      <DependentUpon>chinhsua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chitietsach.resx">
+      <DependentUpon>chitietsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangkitaikhoan.resx">
+      <DependentUpon>Dangkitaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doimatkhau.resx">
+      <DependentUpon>Doimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hoso.resx">
+      <DependentUpon>hoso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Huongdan.resx">
+      <DependentUpon>Huongdan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lichsu.resx">
+      <DependentUpon>Lichsu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Muonsach.resx">
+      <DependentUpon>Muonsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Quanlynhomquyen.resx">
+      <DependentUpon>Quanlynhomquyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quanlytienphat.resx">
+      <DependentUpon>Quanlytienphat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quanlyuser.resx">
+      <DependentUpon>Quanlyuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thongke.resx">
+      <DependentUpon>Thongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trangchu.resx">
+      <DependentUpon>trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trasach.resx">
+      <DependentUpon>Trasach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="LibraryModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LibraryModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="LibraryModel.edmx.diagram">
+      <DependentUpon>LibraryModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fix-icon-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74464.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_558731213_ilx4NZvbojGEMQDAfw5W2mcJjinZqf6V.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-background-fe1vlrrmvaabwo8l.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-to-school-background-with-silhouette-of-books-feathers-school-tool-doodle-and-copy-space-area-suitable-to-place-on-content-with-that-theme-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cHJpdmF0ZS90ZW1wbGF0ZXMvZmlsZXMvY3JlYXRlX3Rvb2wvMjAyMy0wNy8wMWd6ZDNwMjVhNms5aHBhNzl4enFkZGZ5cy1sazhpa3NlMi5wbmc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LibraryModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LibraryModel.edmx</DependentUpon>
+      <LastGenOutput>LibraryModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LibraryModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LibraryModel.edmx</DependentUpon>
+      <LastGenOutput>LibraryModel.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\huongdansudung.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.5.2\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.5.2\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.5.2\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.5.2\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.5.2\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.5.2\build\EntityFramework.targets')" />
+</Project>

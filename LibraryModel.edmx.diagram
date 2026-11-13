@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="479ed40536ce4d2393a64feb80b3a1fe" Name="Diagram1">
+        <EntityTypeShape EntityType="library_appModel.ChiTietPhieuMuon" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="library_appModel.ChiTietPhieuTra" Width="1.5" PointX="10.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="library_appModel.NguoiDung" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="library_appModel.NhomQuyen" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="library_appModel.PhieuMuon" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="library_appModel.PhieuPhat" Width="1.5" PointX="12.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="library_appModel.PhieuTra" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="library_appModel.Sach" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="library_appModel.TaiKhoan" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="library_appModel.TheLoai" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <AssociationConnector Association="library_appModel.FK_CTPM_PhieuMuon" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_CTPM_Sach" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_CTPT_ChiTietMuon" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_CTPT_PhieuTra" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_PhieuPhat_ChiTietTra" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_PhieuMuon_NguoiLap" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_PhieuMuon_NguoiMuon" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_PhieuTra_NguoiLap" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_TaiKhoan_NguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_TaiKhoan_NhomQuyen" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_PhieuTra_PhieuMuon" ManuallyRouted="false" />
+        <AssociationConnector Association="library_appModel.FK_Sach_TheLoai" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
