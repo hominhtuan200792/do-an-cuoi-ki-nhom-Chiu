@@ -1,1 +1,1 @@
-# do-an-cuoi-ki-nhom-Chiu
+Đây là ứng dụng quản lý thư viện được xây dựng bằng C# Windows Forms kết hợp với SQL Server và Entity Framework. Chương trình hỗ trợ quản lý sách, thể loại, tài khoản người dùng, phân quyền, mượn – trả sách, lịch sử giao dịch, tiền phạt và thống kê. Người dùng đăng nhập theo quyền hạn được cấp để sử dụng các chức năng tương ứng. Mục tiêu của hệ thống là giúp việc quản lý thư viện trở nên thuận tiện, chính xác và tiết kiệm thời gian.
